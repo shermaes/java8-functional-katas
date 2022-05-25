@@ -81,7 +81,7 @@ public class DataUtil {
         result.add(new Movie(70111470,
                 "Die Hard",
                 ImmutableList.of(
-                        new BoxArt(150, 200, "http://cdn-0.nflximg.com/images/2891/DieHard150.jpg"),
+                        new BoxArt(150, 200, "http://cdn-0.nflximg.com/images/2891/DieHard300.jpg"),
                         new BoxArt(200, 200, "http://cdn-0.nflximg.com/images/2891/DieHard200.jpg")
                 ),
                 "http://api.netflix.com/catalog/titles/movies/70111470",
