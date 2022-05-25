@@ -1,6 +1,5 @@
 package katas;
 
-import org.hamcrest.CoreMatchers;
 import static org.hamcrest.CoreMatchers.*;
 
 import org.junit.Assert;
