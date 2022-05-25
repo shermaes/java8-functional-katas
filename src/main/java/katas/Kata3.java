@@ -28,8 +28,9 @@ public class Kata3 {
         //1)I create a list of Integers
         //2) with movieLists.stream() I create a stream of movies objects
         //3) what does flatMap do?
-        //Returns a stream consisting of the results of replacing each element of the stream I created in 1)
+        //Oracle:Returns a stream consisting of the results of replacing each element of the stream I created in 1)
         // with the contents of a mapped stream produced by applying the provided mapping function to each element.
+        //Me: Grabs two flux and flats them into one. It even breaks the hierarchy of teh flux that contains these 2 fluxes.
         //4) I get the int value of the id using .map()
         //5) with collect(Collectors.toList()) I accumulate the results into a list
     }
