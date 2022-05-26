@@ -23,8 +23,7 @@ public class Kata9 {
 
         List<Map> newList = movieLists.stream()
                 .flatMap( m -> m.getVideos().stream())
-                .map(n -> ImmutableMap.of("id", n.getId(), "title", n.getTitle(), "time", n.getInterestingMoments().stream().map(l-> {l.getType().compareTo("Middle");
-                return l.getTime();}), "url", n.getBoxarts().stream()
+                .map(n -> ImmutableMap.of("id", n.getId(), "title", n.getTitle(), "time", n.getInterestingMoments().stream().map(l-> l.getTime()).collect(Collectors.toList()), "url", n.getBoxarts().stream()
                         .reduce((a,b) -> a.getWidth() < a.getHeight()? a:b).map(p -> p.getUrl()))).collect(Collectors.toList());
 
         System.out.println(newList);

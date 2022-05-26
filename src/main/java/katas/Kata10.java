@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
-    Goal: Create a datastructure from the given data:
+    Goal: Create a data structure from the given data:
 
     We have 2 arrays each containing lists, and videos respectively.
     Each video has a listId field indicating its parent list.
