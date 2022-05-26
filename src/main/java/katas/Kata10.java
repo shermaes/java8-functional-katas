@@ -57,12 +57,16 @@ public class Kata10 {
         List<Map> videos = DataUtil.getVideos();
 
         List<Map> newList = lists.stream()
-                .map(l ->ImmutableMap.of("name", l.get("name"), "videos", videos.stream().map(m ->ImmutableList.of(
+                .map(l ->ImmutableMap.of("name", l.get("name"), "videos", videos.stream()
+                        .map(m ->ImmutableList.of(
                         ImmutableMap.of("id", m.get("id"), "title", m.get("title")),
                         ImmutableMap.of("id", m.get("id"), "title", m.get("title")))).collect(Collectors.toList())
                 )).collect(Collectors.toList());
 
         System.out.println(newList);
+        //1) Created a list
+        //2)In my ImmutableMap I create another 2 list as Immutable maps
+        //3) the key is sent into the get in order to retrieve the respective values
 
         return newList;
 
